@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cake Bar</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="/images/logo.svg" alt="logo" class="header-logo">
+        <nav>
+            <ul class="header-nav">
+                <li><a href="#home" class="header-nav-link">Home</a></li>
+                <li><a href="#works" class="header-nav-link"">Our works</a></li>
+                <li><a href="#order" class="header-nav-link"">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h2 class="subtitle">Cake Bar</h2>
+                <p class="text">Step into our mysterious cake shop, where flavors dance in harmony and every bite is a journey into the extraordinary.</p>
+            </div>
+            <img src="/images/image-hero.jpg" alt="hero image" class="hero-image">
+        </section>
+
+        <section class="popup" id="popup">
+            <button class="close-btn" onclick="closePopup()"><img src="/images/close.png" alt=""></button>
+            <button class="arrow-btn left-arrow" onclick="prevImage()"><img src="/images/arrow.png" alt=""></button>
+            <button class="arrow-btn right-arrow" onclick="nextImage()"><img src="/images/arrow.png" alt=""></button>
+            <img src="/images/image-slider1.png" class="popup-image" alt="">
+        </section>
+
+        <section id="works" class="works">
+            <div class="image-container">
+                <img src="/images/image-slider1.png" class="image" alt="" onclick="openPopup(event, 0)">
+            </div>
+            <div class="image-container">
+                <img src="/images/image-slider2.png" class="image" alt="" onclick="openPopup(event, 1)">
+            </div>
+            <div class="image-container image-container-open">
+                <img src="/images/image-hero.jpg" class="image" alt="" onclick="openPopup(event, 2)">
+            </div>
+            <div class="image-container">
+                <img src="/images/image-slider1.png" class="image" alt="" onclick="openPopup(event, 3)">
+            </div>
+            <div class="image-container">
+                <img src="/images/image-slider2.png" class="image" alt="" onclick="openPopup(event, 4)">
+            </div>
+            <div class="image-container">
+                <img src="/images/image-hero.jpg" class="image" alt="" onclick="openPopup(event, 5)">
+            </div>
+        </section>
+
+        <section id="order" class="order">
+            <img src="/images//image-order.jpg" alt="" class="order-image">
+            <div class="order-text">
+                <h2 class="subtitle">How to order?</h2>
+                <ol class="order-list">
+                    <li class="text">Uncover the mysteries within our cakes and choose your perfect sweet tale.</li>
+                    <li class="text">Select your cake, customize it, and proceed to checkout for a seamless</li>
+                    <li class="text">Complete your order with our secure payment gateway.</li>
+                    <li class="text">Await our confirmation email and the arrival of your enchanting confection.</li>
+                </ol>
+                <a href="#" class="order-button">Order</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <nav>
+            <ul class="footer-nav">
+                <li><a href="#"><img src="/images/icon-x.svg" alt="" class="footer-icon"></a></li>
+                <li><a href="#"><img src="/images/logo-black.svg" alt="" class="footer-icon-logo"></a></li>
+                <li><a href="#"><img src="/images/icon-instagram.svg" alt="" class="footer-icon"></a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>
